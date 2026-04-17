@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mediaqueries.css">
@@ -220,34 +219,36 @@
 
           <div class="details-container color-container">
   <div class="article-container"> 
-    <div class="mini-weather-ui">
-      <div class="mini-search">
-        <input type="text" id="mini-city-input" placeholder="Search city..." />
-        <button id="mini-search-btn" type="button">Search</button>
+    <div class="ai-lab-console">
+      <div class="console-header">
+        <span class="status-dot"></span>
+        <p>Gemini-1.5-Flash Interface</p>
       </div>
+      
+      <div class="console-body">
+        <div id="ai-response-area" class="response-text">
+// AI INTERFACE READY
+// ------------------
+// > EXECUTE: Type query below
+// > TOPICS: Skills, Projects, Experience
+// > SEND: Press Enter or Click 🚀
+        </div>
 
-      <div class="mini-weather-main">
-        <div class="mini-main-left">
-          <h2 id="mini-city">Loading...</h2>
-          <p id="mini-details">Fetching weather...</p>
-          <p id="mini-stats">Humidity: <span id="mini-humidity">-</span>, Wind: <span id="mini-wind">-</span></p>
+        <div class="input-wrapper">
+          <input type="text" id="user-prompt" placeholder="Type here..." />
+          <button id="send-to-ai" class="icon-btn">🚀</button>
         </div>
-        <div class="mini-main-right">
-          <div id="mini-icon"></div>
-          <div class="mini-temp"><span id="mini-temp-val">--</span>°F</div>
-        </div>
+
       </div>
-
-      <div class="mini-forecast" id="mini-forecast"></div>
     </div>
   </div> 
-
-  <h2 class="experience-sub-title project-title">Weather Labs</h2> 
+  <h2 class="experience-sub-title project-title">JS & AI Labs</h2> 
   <p class="project-static-desc">
-    Live forecast interface built with <strong>Axios and API integration</strong>. Showcases real-time data handling and responsive UI design.
+  An experimental space featuring AI API integration. 
+  <strong>Query the console to explore my skills, tech stack, or the projects featured here.</strong> 
   </p>
   <div class="btn-container">
-    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/allievicky/weatherproject', '_blank')">Github</button>
+    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/allievicky', '_blank')">Github</button>
   </div>
 </div>
       <img
